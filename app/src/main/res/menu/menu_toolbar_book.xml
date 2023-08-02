@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/arrow"
+        android:title="Назад"
+        android:icon="@drawable/round_arrow_back_24"
+        app:showAsAction="always"/>
+    <item android:id="@+id/favorites"
+        android:title="Избранное"
+        android:icon="@drawable/ic_star_empty"
+        app:showAsAction="always"/>
+
+        <item android:id="@+id/author"
+            android:title="Еще у автора"/>
+</menu>

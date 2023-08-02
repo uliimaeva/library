@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookViewFragment"
+    android:background="@color/fon">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:id="@+id/linear_layout_book"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@color/main_2">
+
+           <ImageView
+               android:id="@+id/book_cover"
+               android:layout_width="wrap_content"
+               android:layout_height="250dp"
+               android:src="@drawable/cover"
+               android:layout_gravity="center"
+               android:padding="15dp"/>
+           <TextView
+               android:id="@+id/name_book"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Это Название книги"
+               android:textAlignment="center"
+               android:textSize="24sp"/>
+           <TextView
+               android:id="@+id/author_book"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Это автор книги"
+               android:textAlignment="center"
+               android:textSize="22sp"/>
+       </LinearLayout>
+       <TextView
+           android:id="@+id/amount_book"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Кол-во: "
+           android:layout_margin="15dp"
+           android:textSize="16sp"
+           android:layout_below="@+id/linear_layout_book"/>
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@id/amount_book">
+           <TextView
+               android:id="@+id/description"
+               android:layout_below="@+id/amount_book"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="описание пупы з@лупы"
+               android:layout_margin="15dp"/>
+       </ScrollView>
+
+   </RelativeLayout>
+
+</FrameLayout>
